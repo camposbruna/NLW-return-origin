@@ -26,7 +26,7 @@
                     <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
                     <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
                 </ul>      
-                <a href="#contact" onclick="closeMenu()"><button class="secondary-button">Agende sua consulta</button></a>
+                <a href="#contact" onclick="closeMenu()"><button class="secondary-button">Agendar consulta</button></a>
                 
                 <ul class="social-links">
                     <li><a href="https://instagram.com/" target="_blank"><img src="icons/instagram.svg" alt="Redirecionar para o Instagram"></a></li>
@@ -39,28 +39,33 @@
     
     <section id="home">              
         <div class="wrapper">
-            <header>
-                <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
-                <h1>Assistência médica simplificada para todos</h1>
-            </header>
-            
-            <div class="content">
-                <p>Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
+            <div class="col-a">
+                <header>
+                    <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
+                    <h1>Assistência médica simplificada para todos</h1>
+                </header>
                 
-                <a href="https://wa.me/5548911111111" target="_blank"><button class="primary-button"><img src="icons/whatsapp.svg" alt="icone whatsapp">Agende sua consulta</button></a>
+                <div class="content">
+                    <p>Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
+                
+                    <a href="https://wa.me/5548911111111" target="_blank"><button class="primary-button"><img src="icons/whatsapp.svg" alt="icone whatsapp">Agende sua consulta</button></a>
+                </div>
+            </div>
+            
+            <div class="col-b">
                 <img class="img-woman" src="assets/mulher-negra-com-blusa-verde-com-as-duas-maos-no-peito.png" alt="Mulher negra com blusa verde com as duas mãos no peito e sorrindo">
             </div>
 
             <div class="stats">
-                <div>
+                <div class="stat">
                     <h3>+3.500</h3>
                     <p>Pacientes atendidos</p>
                 </div>
-                <div>
+                <div class="stat">
                     <h3>+15</h3>
                     <p>Especialistas disponíveis</p>
                 </div>
-                <div>
+                <div class="stat">
                     <h3>+10</h3>
                     <p>Anos no mercado</p>
                 </div>
@@ -118,15 +123,19 @@
 
     <section id="about">
         <div class="wrapper">
-            <header>
-                <h4>Sobre nós</h4>
-                <h2>Entenda quem somos e por que existimos</h2>
-            </header>
+            <div class="col-a">
+                <header>
+                    <h4>Sobre nós</h4>
+                    <h2>Entenda quem somos e por que existimos</h2>
+                </header>
+                
+                <div class="content">
+                    <p> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    </p>
+                </div>
+            </div>
             
-            <div class="content">
-                <p> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                </p>
-
+            <div class="col-b">
                 <img class="img-pattern" src="assets/happy-doctor-holding-a-clipboard-with-patients.png" alt="Doutor feliz segurando prancheta com pacientes">
             </div>
         </div>
@@ -134,37 +143,43 @@
 
     <section id="contact">
         <div class="wrapper">
-
-            <header>
-                <h2>Entre em contato com a gente!</h2>
-            </header>
-
-            <div class="content">
-                <ul>
-                    <li><img src="icons/map-pin.svg" alt="Icone mapa"> R. Amauri Souza, 346</li>
-                    <li><img src="icons/mail.svg" alt="Icone e-mail"> contato@doctorcare.com</li>
-                </ul>
-
-                <a href="https://wa.me/5548911111111" target="_blank"><button class="primary-button"><img src="icons/whatsapp.svg" alt="icone whatsapp">Agende sua consulta</button></a>
-
-                <img class="img-pattern" src="assets/homem-negro-sorrindo-usando-celular.png" alt="Homem negro de óculos com moletom bege mexendo no celular e sorrindo">
+            <div class="col-a">
+                <header>
+                    <h2>Entre em contato com a gente!</h2>
+                </header>
+                <div class="content">
+                    <ul>
+                        <li><img src="icons/map-pin.svg" alt="Icone mapa"> R. Amauri Souza, 346</li>
+                        <li><img src="icons/mail.svg" alt="Icone e-mail"> contato@doctorcare.com</li>
+                    </ul>
+                    <a href="https://wa.me/5548911111111" target="_blank"><button class="primary-button"><img src="icons/whatsapp.svg" alt="icone whatsapp">Agende sua consulta</button></a>
+                </div>
             </div>
 
+            <div class="col-b">
+                <img class="img-pattern" src="assets/homem-negro-sorrindo-usando-celular.png" alt="Homem negro de óculos com moletom bege mexendo no celular e sorrindo">
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="wrapper">
-            <a class="logo" href="#home">Doctor<span class="logo">Care</span></a>
-            <p>
-                ©2021 Beautysalon. <br>
-                Todos os direitos reservados.
-            </p>
-            <ul class="social-links">
-                <li><a href="https://instagram.com/" target="_blank"><img src="icons/instagram.svg" alt="Redirecionar para o Instagram"></a></li>
-                <li><a href="https://facebook.com/" target="_blank"><img src="icons/facebook.svg" alt="Redirecionar para o Facebook"></a></li>
-                <li><a href="https://youtube.com/" target="_blank"><img src="icons/youtube.svg" alt="Redirecionar para o Youtube"></a></li>
-            </ul>
+            <div class="col-a">
+                <a class="logo" href="#home">Doctor<span class="logo">Care</span></a>
+                <p>
+                    ©2021 DoctorCare <br>
+                    Todos os direitos reservados.
+                </p>
+            </div>
+
+
+            <div class="col-b">
+                <ul class="social-links">
+                    <li><a href="https://instagram.com/" target="_blank"><img src="icons/instagram.svg" alt="Redirecionar para o Instagram"></a></li>
+                    <li><a href="https://facebook.com/" target="_blank"><img src="icons/facebook.svg" alt="Redirecionar para o Facebook"></a></li>
+                    <li><a href="https://youtube.com/" target="_blank"><img src="icons/youtube.svg" alt="Redirecionar para o Youtube"></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 

@@ -4,6 +4,41 @@ onScroll() //corrige o bug de carregamento de página
 function onScroll() {
     showNavOnScroll()
     backToTopButtonOnScroll()
+
+    activateMenuAtCurrentSection(home)
+    activateMenuAtCurrentSection(services)
+    activateMenuAtCurrentSection(about)
+    activateMenuAtCurrentSection(contact)
+}
+
+//Função para deixar a opção do menu ativa conforme scroll na página.
+function activateMenuAtCurrentSection(section) {
+    //Cria uma linha imaginária (linha alvo)
+    const targetLine = scrollY + innerHeight / 2
+    
+    //topo da seção
+    const sectionTop = section.offsetTop
+
+    //altura da seção
+    const sectionHeight = section.offsetHeight
+
+    //o topo da seção chegou ou ultrapassou a linha alvo
+    const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop
+    
+    //verifica se a base está abaixo da linha alvo
+    const sectionEndsAt = sectionTop + sectionHeight
+    const sectionEndPassedTargetLine = sectionEndsAt <= targetLine
+   
+    //limites da seção
+    const sectionBoundaries = sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine
+
+    const sectionId = section.getAttribute('id')
+    const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
+
+    menuElement.classList.remove('active')
+    if(sectionBoundaries) {
+        menuElement.classList.add('active')
+    }
 }
 
 function showNavOnScroll() {
@@ -14,6 +49,7 @@ function showNavOnScroll() {
     } else {
         navigation.classList.remove('scroll')
     } 
+
 }
 
 function backToTopButtonOnScroll() {
@@ -51,3 +87,5 @@ ScrollReveal({
 #about .content,
 #contact header,
 #contact`)
+
+
